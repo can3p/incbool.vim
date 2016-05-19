@@ -22,6 +22,18 @@ function! SwapBooleans(char)
   elseif word == 'true'
     let convert = 'false'
   endif
+  
+  if word == 'asc'
+    let convert = 'desc'
+  elseif word == 'desc'
+    let convert = 'asc'
+  endif
+  
+  if word == 'show'
+    let convert = 'hide'
+  elseif word == 'hide'
+    let convert = 'show'
+  endif
 
   "test cases
   "true k
